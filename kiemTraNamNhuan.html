@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year=parseInt(prompt('Nhap Nam Muon Kiem Tra:'));
+
+    // if ( year % 4 == 0) {
+    //     if (year % 100 == 0) {
+    //         if (year % 400 == 0) {
+    //             alert(year + "La Nam Nhuan");
+    //         } else {
+    //             alert( year + ' KO PHAI NAM NHUAN');
+    //         }
+    //     } else {
+    //         alert(year+'LA NAM NHUAN');
+    //     }
+    // }   else {
+    //     alert(year + 'KO PHAI NAM NHUAN');
+    // }
+
+    let namNhuan = false;
+
+    let chiaHetCho4 = year % 4 ==0;
+    if (chiaHetCho4){
+        let chiaHetCho100 = year % 100 ==0;
+        if (chiaHetCho100){
+            let chiaHetCho400 = year % 400 == 0;
+            if ( chiaHetCho400){
+                namNhuan=true;
+            }
+        } else {
+            namNhuan = true;
+        }
+    }
+
+    if ( namNhuan ){
+        alert( year +''+'La Nam Nhuan');
+    } else {
+        alert(year+ '' + 'KO NHUAN');
+    }
+
+</script>
+
+</body>
+</html>
