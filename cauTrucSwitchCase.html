@@ -5,41 +5,40 @@
     <title>thucHanhBai8</title>
 </head>
 <body>
-<!--//Bai 1-->
-<!--<script>-->
-<!--  switch (brower) {-->
-<!--    case 'Edge':-->
-<!--      alert('Okey');-->
-<!--      break;-->
-<!--    case 'chrome':-->
-<!--    case 'firefox':-->
-<!--    case 'safari':-->
-<!--    case 'opera':-->
-<!--      alert('okey')-->
-<!--          break;-->
-<!--    default:-->
-<!--      alert('bye')-->
-<!--  }-->
-<!--</script>-->
-
-<!--//Bai2-->
-<!--<script>-->
-<!--  let a=prompt('a?',"");-->
-<!--  switch (a){-->
-<!--    case 0:-->
-<!--      alert('0');-->
-<!--      break;-->
-<!--    case 1:-->
-<!--      alert('1');-->
-<!--      break;-->
-<!--    case 2:-->
-<!--    case 3:-->
-<!--      alert('2,3');-->
-<!--      break;-->
-<!--  }-->
-<!--</script>-->
+//Bai 1
 <script>
-  let value=+parseInt(prompt('NHAP SO VAO DAY', 0 ))
+  switch (brower) {
+    case 'Edge':
+      alert('Okey');
+      break;
+    case 'chrome':
+    case 'firefox':
+    case 'safari':
+    case 'opera':
+      alert('okey')
+          break;
+    default:
+      alert('bye')
+  }
+</script>
+//Bai2
+<script>
+  let a=prompt('a?',"");
+  switch (a){
+    case 0:
+      alert('0');
+      break;
+    case 1:
+      alert('1');
+      break;
+    case 2:
+    case 3:
+      alert('2,3');
+      break;
+  }
+</script>
+<script>
+  let value=+prompt('NHAP SO VAO DAY', 0 )
   // if( value > 0){
   //   alert(1);
   // }else if( value < 0){
@@ -47,20 +46,17 @@
   // }else {
   //   alert(0)
   // }
-  console.log('==========', value)
   switch (value){
-      case value > 0:
-      alert(1)
+      case 0:
+      alert(0)
       break;
-      case value < 0:
+      case Math.abs(value):
+      alert(1)
+          break;
+      default:
       alert(-1)
           break;
-    default:
-      alert(0)
-          break;
   }
-
-
 </script>
 </body>
 </html>
